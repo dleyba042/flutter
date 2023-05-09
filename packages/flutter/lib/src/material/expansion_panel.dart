@@ -338,7 +338,7 @@ class _ExpansionPanelListState extends State<ExpansionPanelList> {
     }
     else
     {
-       widget.expansionCallback?.call(index, !isExpanded);
+    widget.expansionCallback?.call(index, !isExpanded);
     }
   }
 
