@@ -330,15 +330,15 @@ class _ExpansionPanelListState extends State<ExpansionPanelList> {
         }
       }
         //Because when _handlePressed the state is not yet expanded
-      widget.expansionCallback?.call(index, !isExpanded);
+       widget.expansionCallback?.call(index, !isExpanded);
 
-       setState(() {
+      setState(() {
         _currentOpenPanel = isExpanded ? null : pressedChild;
       });
     }
     else
     {
-    widget.expansionCallback?.call(index, !isExpanded);
+      widget.expansionCallback?.call(index, !isExpanded);
     }
   }
 
